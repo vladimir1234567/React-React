@@ -1,0 +1,16 @@
+.nav {
+    grid-area: n;
+    background: lightgreen;
+}
+.item a {
+    /* display: block; */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.item.active a {
+    /* display: block; */
+    color: rgb(19, 53, 165);
+    
+}

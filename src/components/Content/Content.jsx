@@ -1,14 +1,25 @@
 import React from 'react';
-import './Content.css';
+import s from './Content.module.css';
 import sea from '../Img/sea.jpg';
+import ava from '../Img/ava.jpg';
+import MyPosts from './myPosts/myPosts';
 
 
 const Content = () => {
   return (
-    <div className="content">
-      <img src={sea} alt="sea" />
-        <a href='#'>Home</a>
-        <a href='#'>Message</a>
+    <div className={s.content}>
+      <div>
+      <img src={sea} className={s.content_img} alt="sea" />
+      </div>
+      <div>
+      <img src={ava} className={s.avatar} alt="avatar" />
+      <div>
+      description
+      </div>
+      </div>
+      
+      <MyPosts />>
+        
     
     </div>
   )
