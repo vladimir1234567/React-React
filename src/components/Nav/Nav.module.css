@@ -9,8 +9,10 @@
     font-size: 30px;
 }
 
-.item.active a {
+.item a.activeLink  {
     /* display: block; */
+    
+    
     color: rgb(19, 53, 165);
     
 }
