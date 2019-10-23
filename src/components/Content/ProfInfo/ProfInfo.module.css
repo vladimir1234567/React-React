@@ -1,0 +1,13 @@
+.profInfo {
+    display: flex;
+
+}
+.avatar {
+    width: 100px;
+}
+.descript {
+    padding: 15px;
+}
+.btn {
+    margin-left: 180px;
+}

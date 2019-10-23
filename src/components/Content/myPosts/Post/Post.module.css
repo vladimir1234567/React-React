@@ -1,0 +1,10 @@
+.brown {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    border-radius: 50%;
+}
+.post {
+    display: flex;
+}

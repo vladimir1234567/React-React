@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './MyPosts.module.css';
+import Post from './Post/Post';
 
 
 
@@ -8,13 +9,12 @@ const MyPosts = () => {
         <div className={s.item}>
 
             <div>
-                        My posts
+                        <h3>My posts:</h3>
                 <div>
-                            post1
+                    <Post message="hi" counteLikes="6"/>
+                    <Post message="Nehi" counteLikes="7"/>
                 </div>
-                <div>
-                            post2
-                </div>
+                
             </div>
 
 
