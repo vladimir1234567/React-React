@@ -1,5 +1,5 @@
 .wrapper {
-    padding-left: 10px;
+    margin-left: 10px;
 }
 .profInfo {
     display: flex;
@@ -10,7 +10,7 @@
     width: 100px;
 }
 .descript {
-    padding: 15px;
+    padding: 15px ;
 }
 .btn {
     margin-left: 180px;
