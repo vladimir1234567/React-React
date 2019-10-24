@@ -5,9 +5,9 @@ import s from './ProfInfo.module.css';
 
 
 
-const MyPosts = () => {
+const ProfInfo = () => {
     return (
-        <div>
+        <div className={s.wrapper}>
             <div className={s.profInfo}>
 
                 <div>
@@ -28,7 +28,7 @@ const MyPosts = () => {
     )
 }
 
-export default MyPosts;
+export default ProfInfo;
 
 
 

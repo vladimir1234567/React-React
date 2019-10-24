@@ -1,5 +1,9 @@
+.wrapper {
+    padding-left: 10px;
+}
 .profInfo {
     display: flex;
+    
 
 }
 .avatar {

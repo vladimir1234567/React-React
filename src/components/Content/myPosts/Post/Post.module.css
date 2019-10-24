@@ -5,6 +5,18 @@
     background: yellow;
     border-radius: 50%;
 }
+.wrapperPost {
+    padding-bottom: 15px;
+
+}
 .post {
     display: flex;
+    padding-bottom: 3px;
+
+}
+.avaPost{
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 0;
+    margin-right: 10px;
 }

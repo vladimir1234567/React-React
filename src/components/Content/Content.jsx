@@ -8,14 +8,9 @@ import ProfInfo from './ProfInfo/ProfInfo';
 const Content = () => {
   return (
     <div className={s.content}>
-      
       <img src={sea} className={s.content_img} alt="sea" />
-      
       <ProfInfo />
-      
       <MyPosts />
-        
-    
     </div>
   )
 }
