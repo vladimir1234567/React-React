@@ -9,7 +9,6 @@ const Post = (props) => {
         <div className={s.wrapperPost}>
         <div className={s.post}>
         <img src={ava} className={s.avaPost} alt="avatar" />
-            {/* <span className={s.brown}></span> */}
             <div>
             {props.message}
             </div>
