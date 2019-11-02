@@ -19,10 +19,7 @@ const ProfInfo = () => {
                 </div>
 
             </div>
-            <div className={s.textField}>
-                <textarea name="mytext" id="into" cols="30" rows="5"></textarea>
-            </div>
-                <button className={s.btn}>Send</button>
+            
             
         </div>
     )
