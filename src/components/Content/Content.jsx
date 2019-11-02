@@ -10,7 +10,7 @@ const Content = (props) => {
     <div className={s.content}>
       <img src={sea} className={s.content_img} alt="sea" />
       <ProfInfo />
-      <MyPosts posts={props.posts} />
+      <MyPosts posts={props.posts} addPost={props.addPost}/>
     </div>
   )
 }
