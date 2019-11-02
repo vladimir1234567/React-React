@@ -4,21 +4,16 @@ import Post from './Post/Post';
 
 
 
-const MyPosts = () => {
-    let post = [
-        {id: 1, message: "Hi", counteLikes: 6},
-        {id: 2, message: "AnHow are uoy?drey", counteLikes:8},
-        {id: 3, message: "Yol", counteLikes: 12}
-    ];
+const MyPosts = (props) => {
 
-    let newPostElement = React.createRef();
-
-    let posts = post.
-        map( p => <Post message={p.message} counteLikes={p.counteLikes} /> );
+    let posts = props.posts.
+        map( p => <Post message={p.message} likesCount={p.likesCount} /> );
     let addPost = () => {
         let text = newPostElement.current.value;
         alert(text);
     } 
+
+    let newPostElement = React.createRef();
 
     return (
         <div className={s.item}>

@@ -5,12 +5,12 @@ import MyPosts from './myPosts/myPosts';
 import ProfInfo from './ProfInfo/ProfInfo';
 
 
-const Content = () => {
+const Content = (props) => {
   return (
     <div className={s.content}>
       <img src={sea} className={s.content_img} alt="sea" />
       <ProfInfo />
-      <MyPosts />
+      <MyPosts posts={props.posts} />
     </div>
   )
 }
