@@ -10,12 +10,12 @@ const Dialogs = (props) => {
 
 
 
-let dialogs = props.dialogs.
+let dialogs = props.dialogs.dialogs.
       map( d => <DialogItem name={d.name} id={d.id} /> );
 
 
 
-let messages = props.message.
+let messages = props.messages.messages.
       map ( m => <Message className={s.message} message={m.message} /> );
 
   return (
