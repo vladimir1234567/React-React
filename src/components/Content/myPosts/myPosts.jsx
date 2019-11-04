@@ -8,10 +8,10 @@ const MyPosts = (props) => {
 
     let posts = props.posts.
         map( p => <Post message={p.message} likesCount={p.likesCount} /> );
+
+
     let addPost = () => {
-        
         props.addPost();
-        
     } 
 
     let onPostChenge = () => {
