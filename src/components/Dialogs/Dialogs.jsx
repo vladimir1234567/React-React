@@ -7,6 +7,7 @@ import Message from './Message/Message';
 
 
 const Dialogs = (props) => {
+  debugger;
 
   let dialogs = props.dialogs.dialogs.
       map( d => <DialogItem name={d.name} id={d.id} /> );
@@ -17,12 +18,12 @@ const Dialogs = (props) => {
   let newMessageElement = React.createRef(); 
 
   let addMessage = () => {
-    props.addMessage();
+    props.dispatch({ type: 'ADD-MESSAGE' });
   };
 
   let onMessageChenge = () => {
     let text = newMessageElement.current.value;
-    props.updateNewMessageText(text);
+    props.dispatch({ type: 'UPDATE-NEW-MESSAGE-TEXT', freshText: text });
     };
 
   return (
