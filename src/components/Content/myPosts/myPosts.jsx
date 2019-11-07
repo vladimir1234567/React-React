@@ -5,18 +5,19 @@ import Post from './Post/Post';
 
 
 const MyPosts = (props) => {
+   
 
     let posts = props.posts.
         map( p => <Post message={p.message} likesCount={p.likesCount} /> );
 
 
     let addPost = () => {
-        props.addPost();
+        props.dispatch({ type: 'ADD-POST' });
     } 
 
     let onPostChenge = () => {
         let text = newPostElement.current.value;
-        props.updateNewPostText(text);
+        props.dispatch({ type: 'UPDATE-NEW-POST-TEXT', newText: text });
     }
 
     let newPostElement = React.createRef();

@@ -11,9 +11,9 @@ const Content = (props) => {
       <img src={sea} className={s.content_img} alt="sea" />
       <ProfInfo />
       <MyPosts posts={props.posts.posts} 
-               addPost={props.addPost} 
                newPostText={props.posts.newPostText} 
-               updateNewPostText={ props.updateNewPostText } />
+               dispatch={props.dispatch} 
+                />
     </div>
   )
 }
