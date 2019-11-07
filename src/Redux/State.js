@@ -30,13 +30,14 @@ let store = {
         sidebar: {}
     },
 
+    _callSubscriber() {
+        console.log('state changed');
+    },
+
     getState() {
         return this._state;
     },
 
-    _callSubscriber() {
-        console.log('state changed');
-    },
 
     addPost() {
     
@@ -76,7 +77,9 @@ let store = {
     
     subscribe(observer) {
         this._callSubscriber = observer;
-    } 
+    }
+
+
 }
 
 
