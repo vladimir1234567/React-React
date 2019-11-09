@@ -12,8 +12,7 @@ const Content = (props) => {
       <ProfInfo />
       <MyPosts posts={props.profilePage.posts} 
                newPostText={props.profilePage.newPostText} 
-               dispatch={props.dispatch} 
-                />
+               dispatch={props.dispatch}  />
     </div>
   )
 }
