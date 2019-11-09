@@ -1,10 +1,10 @@
 import React from 'react';
 import s from './Dialogs.module.css';
-import {NavLink} from 'react-router-dom';
+// import {NavLink} from 'react-router-dom';
 import DialogItem from './DialogItem/DialogItem';
 import Message from './Message/Message';
-import {updateNewMessageBodynCreator} from '../../Redux/State';
-import {sendMessageCreator} from '../../Redux/State';
+import {updateNewMessageBodynCreator, sendMessageCreator} from '../../Redux/dialogs-reduser';
+
 
 
 

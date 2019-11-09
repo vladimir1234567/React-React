@@ -2,12 +2,12 @@ import profileReduser from "./profile-reduser";
 import dialogsReduser from "./dialogs-reduser";
 import sidebarReduser from "./sidebar-reduser";
 
-const ADD_POST = 'ADD-POST';
-const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+// const ADD_POST = 'ADD-POST';
+// const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
 
 
-const UPDATE_NEW_Message_BODY = 'UPDATE_NEW_Message_BODY';
-const SEND_MESSaGE = 'SEND_MESSaGE';
+// const UPDATE_NEW_Message_BODY = 'UPDATE_NEW_Message_BODY';
+// const SEND_MESSaGE = 'SEND_MESSaGE';
 
 let store = {
     _state: {
@@ -67,14 +67,9 @@ let store = {
 }
 
 
-export const addPostActionCreator = () => ({ type: ADD_POST });
-export const updateNewPostTexstActionCreator = (text) => ({ type: UPDATE_NEW_POST_TEXT, 
-                                                            newText: text });
+
 
                                                             
-export const sendMessageCreator = () => ({ type: SEND_MESSaGE });
-export const updateNewMessageBodynCreator = (body) => ({ type: UPDATE_NEW_Message_BODY, 
-                                                            body: body });
 
 
 export default store;
