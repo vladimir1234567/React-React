@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from 'react-router-dom';
-import store from './Redux/State';
+import store from './Redux/store';
 
 let rerenderEntireTree = (state) => {
 ReactDOM.render(
