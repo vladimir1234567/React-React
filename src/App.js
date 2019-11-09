@@ -19,7 +19,7 @@ const App = (props) => {
       <Nav />
       <div className="app-wrapper-content">
       <Route path='/content' render={() => 
-             <Content posts={props.state.profilePage} 
+             <Content profilePage={props.store.getState().profilePage} 
                       dispatch={props.dispatch}
                       /> } />
 

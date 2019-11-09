@@ -9,10 +9,10 @@ import {sendMessageCreator} from '../../Redux/State';
 
 
 const Dialogs = (props) => {
-
+  
   let state = props.store.getState().dialogsPage;
+ 
 
-debugger;
   let dialogs = state.dialogs.
       map( d => <DialogItem name={d.name} id={d.id} /> );
 
@@ -24,6 +24,7 @@ debugger;
   let onSendMessageClick = () => {
     props.store.dispatch(sendMessageCreator())
   }
+  
 
   let onNewMessageChenge = (e) => {
     let body = e.target.value;
