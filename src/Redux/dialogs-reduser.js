@@ -19,7 +19,6 @@ let initialState = {
         { id: 5, message: 'Yo' }
     ],
     newMessageBody: ''
-
 }
 
 const dialogsReduser = (state = initialState, action) => {

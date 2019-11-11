@@ -1,26 +1,19 @@
 import React from 'react';
 import s from './MyPosts.module.css';
 import Post from './Post/Post';
-import {addPostActionCreator, updateNewPostTexstActionCreator} from '../../../Redux/profile-reduser';
-
-
 
 const MyPosts = (props) => {
-   
 
     let posts = props.posts.
         map( p => <Post message={p.message} likesCount={p.likesCount} /> );
 
-
     let addPost = () => {
-        props.dispatch(addPostActionCreator());
+        props.addPost()
     } 
 
     let onPostChenge = () => {
         let text = newPostElement.current.value;
-        // let action = { type: 'UPDATE-NEW-POST-TEXT', newText: text };
-        let action = updateNewPostTexstActionCreator(text);
-        props.dispatch(action);
+        props.updateNewPostText(text)
     }
 
     let newPostElement = React.createRef();
@@ -34,8 +27,8 @@ const MyPosts = (props) => {
                           value={ props.newPostText } />
                 </div>
                 <button className={s.btn} onClick={addPost} >Send</button>
-                        <h3>My posts:</h3>
                 <div>
+                <h3>My posts:</h3>
                     { posts }
                 </div>
             </div>
