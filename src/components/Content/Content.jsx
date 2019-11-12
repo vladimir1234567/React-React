@@ -9,7 +9,9 @@ const Content = (props) => {
     <div className={s.content}>
       <img src={sea} className={s.content_img} alt="sea" />
       <ProfInfo />
-      <MyPostsContainer store={props.store}  />
+      {/* <MyPostsContainer store={props.store}  /> */}
+      <MyPostsContainer />
+
     </div>
   )
 }
